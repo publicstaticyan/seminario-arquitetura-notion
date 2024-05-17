@@ -19,7 +19,7 @@ As principais funcionalidades do Notion incluem a capacidade de criar e editar n
 ## Descrição geral da arquitetura
 O sistema do Notion foi projetado para ser flexível e adaptável a uma variedade de usos, desde o gerenciamento de projetos até a organização de tarefas pessoais e profissionais.
 
-A arquitetura do Notion é baseada em um modelo de dados relacional, que permite a criação de diferentes tipos de conteúdo (como texto, imagens, listas de verificação, etc.) e a relação entre eles. Isso é feito através de "blocos", que são as unidades básicas de conteúdo no Notion. Cada bloco pode conter outros blocos, permitindo a criação de estruturas complexas e hierárquicas de conteúdo.
+A arquitetura é baseada em um modelo de dados relacional, que permite a criação de diferentes tipos de conteúdo (como texto, imagens, listas de verificação, etc.) e a relação entre eles. Isso é feito através de "blocos", que são as unidades básicas de conteúdo no Notion. Cada bloco pode conter outros blocos, permitindo a criação de estruturas complexas e hierárquicas de conteúdo.
 
 Além disso, um aspecto importante da arquitetura do Notion é a sua API, que permite a integração com outras ferramentas e serviços. A API do Notion usa o protocolo HTTP e o formato de dados JSON, padrões amplamente utilizados na web.
 
