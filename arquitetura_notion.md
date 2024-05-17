@@ -10,11 +10,20 @@ Suportado em `Windows`, `macOS`, `Android`, `iOS`, `Linux`, `Navegadores Web`
 Notion é um software de produtividade que permite aos usuários combinar notas, tarefas, wikis e bancos de dados em um único lugar. É usado para organizar projetos pessoais ou de trabalho, tomar notas, criar listas de tarefas, gerenciar equipes e muito mais.
 
 As principais funcionalidades do Notion incluem a capacidade de criar e editar notas, listas de verificação, tabelas e quadros Kanban. Ele também oferece modelos personalizáveis, permitindo que os usuários criem páginas que se adequem às suas necessidades específicas. Além disso, o Notion suporta colaboração em tempo real, permitindo que várias pessoas trabalhem no mesmo projeto simultaneamente.
+
 ## Caracterizção
+
 ### Influências sobre a decisão arquitetural
-* Número de clientes:
-* Número de acessos simultâneos:
-* Requisitos de segurança:
+
+* **Número de acessos simultâneos:**
+  Foi preciso considerar no projeto do Notion a grande carga de acessos simultâneos esperados e meios de otimizar a performance diante desse desafio. Para isso, é necessário a implementação de balanceamento de carga e estratégias como 're-sharding' para distribuir a carga no banco de dados.
+  
+* **Número de clientes:**
+  À medida que a base de usuários cresce, o sistema precisa ser capaz de escalar de forma eficaz para lidar com o aumento do tráfego e dos requisitos de armazenamento de dados. Para isso, a implementação de uma arquitetura de microsserviços em nuvem permite escalabilidade vertical de partes independentes do sistema conforme necessário.
+  
+* **Requisitos de segurança:**
+  O Notion lida com dados confidenciais do usuário e, portanto, precisa ser projetado medidas de segurança da informação. O uso de criptografia para dados armazenados e em trânsito e a implementação de mecanismos seguros de autenticação e autorização são estratégias utilizadas para reduzir vulnerabilidades.
+
 
 ## Descrição geral da arquitetura
 O sistema do Notion foi projetado para ser flexível e adaptável a uma variedade de usos, desde o gerenciamento de projetos até a organização de tarefas pessoais e profissionais.
@@ -33,3 +42,9 @@ Em termos de tecnologias utilizadas, o Notion é construído principalmente util
 
 ### Tech stack
 ...
+
+---
+
+## Referências
+**Arka Ganguli, Tanner Johnson, Ben Kraft, Nathan Northcutt**.
+The Great Re-shard: adding Postgres capacity (again) with zero downtime. Disponível em [https://www.notion.so/blog/the-great-re-shard].
