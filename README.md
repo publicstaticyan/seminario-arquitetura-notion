@@ -51,7 +51,7 @@ Em termos de tecnologias utilizadas, o Notion é construído principalmente util
 **Arka Ganguli, Tanner Johnson, Ben Kraft, Nathan Northcutt**.
 The Great Re-shard: adding Postgres capacity (again) with zero downtime. Disponível em [https://www.notion.so/blog/the-great-re-shard].
 
-**Arka Ganguli, Tanner Johnson, Ben Kraft, Nathan Northcutt**.
+**Jake Teton-Landis**.
 The data model behind Notion's flexibility. Disponível em [https://www.notion.so/blog/data-model-behind-notion].
 
 
