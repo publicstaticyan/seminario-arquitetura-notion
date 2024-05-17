@@ -17,6 +17,8 @@ As principais funcionalidades do Notion incluem a capacidade de criar e editar n
 
 * **Número de acessos simultâneos:**
   Foi preciso considerar no projeto do Notion a grande carga de acessos simultâneos esperados e meios de otimizar a performance diante desse desafio. Para isso, é necessário a implementação de balanceamento de carga e estratégias como 're-sharding' para distribuir a carga no banco de dados.
+
+![Processo de Re-Sharding](img/resharding_process.png)
   
 * **Número de clientes:**
   À medida que a base de usuários cresce, o sistema precisa ser capaz de escalar de forma eficaz para lidar com o aumento do tráfego e dos requisitos de armazenamento de dados. Para isso, a implementação de uma arquitetura de microsserviços em nuvem permite escalabilidade vertical de partes independentes do sistema conforme necessário.
