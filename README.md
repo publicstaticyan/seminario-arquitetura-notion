@@ -43,13 +43,64 @@ Em termos de tecnologias utilizadas, o Notion é construído principalmente util
 ...
 
 ### Tech stack
-...
 
----
+![Tecnologias utilizadas](img/techstack.png)
+
+# Tech Stack Overview
+
+## Linguagens e Frameworks 
+
+- **Node.js**: Ambiente de execução JavaScript server-side.
+- **Next.js**: Framework React para desenvolvimento web.
+- **JavaScript**: Linguagem de programação amplamente utilizada para desenvolvimento web.
+- **Python**: Linguagem de programação versátil, usada em diversas áreas como ciência de dados e desenvolvimento web.
+- **HTML5**: Linguagem de marcação padrão para criação de páginas web.
+- **CSS 3**: Linguagem de estilo para descrever a apresentação de documentos HTML.
+- **Kotlin**: Linguagem de programação moderna e estática usada principalmente para desenvolvimento Android.
+- **Swift**: Linguagem de programação desenvolvida pela Apple para desenvolvimento de aplicativos iOS.
+- **TypeScript**: Superconjunto de JavaScript que adiciona tipagem estática ao código.
+
+## Development
+
+- **Babel**: Transpilador JavaScript que permite usar a próxima geração de JavaScript, hoje.
+- **Webpack**: Empacotador de módulos JavaScript.
+- **AWS Elastic Load Balancing**: Serviço que distribui automaticamente o tráfego de aplicativos por várias instâncias.
+- **Docker**: Plataforma para desenvolver, enviar e executar aplicativos em contêineres.
+
+## Libraries
+
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **jQuery**: Biblioteca JavaScript que simplifica manipulação de HTML, eventos e animações.
+- **Moment.js**: Biblioteca JavaScript para manipulação e formatação de datas.
+- **Lodash**: Biblioteca JavaScript que fornece utilitários para tarefas de programação comuns.
+
+## Hosting
+
+- **Amazon EC2**: Serviço da AWS que fornece capacidade de computação escalável na nuvem.
+- **Amazon Web Services (AWS)**: Plataforma de serviços de computação em nuvem da Amazon.
+
+## Data Stores
+
+- **Apache Spark**: Motor de processamento de dados para análise em tempo real.
+- **Apache Flink**: Plataforma de processamento de fluxo de dados.
+- **Amazon S3**: Serviço de armazenamento de objetos escalável.
+- **dbt**: Ferramenta para transformação de dados no fluxo de trabalho de ETL.
+- **PostgreSQL**: Sistema de gerenciamento de banco de dados relacional e objeto-relacional.
+- **Memcached**: Sistema de cache distribuído.
+- **Hadoop**: Framework para processamento de grandes conjuntos de dados.
+- **Kafka**: Plataforma de streaming de eventos.
+- **Airflow**: Plataforma para criar, agendar e monitorar fluxos de trabalho.
+
 
 ## Referências
 **Arka Ganguli, Tanner Johnson, Ben Kraft, Nathan Northcutt**.
 The Great Re-shard: adding Postgres capacity (again) with zero downtime. Disponível em [https://www.notion.so/blog/the-great-re-shard].
+
+**Himalayas app Notion tech stack**
+Discover the tools and technologies used to build Notion's products and services. Disponível em [https://himalayas.app/companies/notion/tech-stack]
+
+**Michael slashdev**
+Breaking down Notion Tech Stack.  Disponível em [https://slashdev.io/-breaking-down-notions-tech-stack]
 
 **Jake Teton-Landis**.
 The data model behind Notion's flexibility. Disponível em [https://www.notion.so/blog/data-model-behind-notion].
