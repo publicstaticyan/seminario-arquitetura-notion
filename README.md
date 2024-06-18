@@ -43,7 +43,14 @@ Inicialmente concebida como um construtor de páginas web, a primeira versão en
 A popularidade de Notion cresceu significativamente com a pandemia de 2020, que impulsionou a necessidade de ferramentas de colaboração remota, ajudando a quintuplicar sua base de usuários. Com mais de 30 milhões de usuários em 2023, Notion atraiu uma variedade de empresas e indivíduos criativos, sendo valorizada em mais de $20 bilhões. A capacidade de personalização e a interface intuitiva contribuíram para seu sucesso, além do movimento no-code que facilitou o uso por pessoas sem conhecimento de programação.
 
 ### Decisões de projeto
-...
+
+Como dito anteriormente, o Notion adota uma abordagem menos tradicional, organizando os dados em entidades modulares conhecidas como blocos. Esses blocos constituem as unidades fundamentais de informação e facilitam uma estrutura hierárquica versátil, capaz de acomodar vários tipos de dados, incluindo texto, imagens, listas, linhas de dados e até páginas inteiras. Um dos principais motivos para adotar esse uso é o fato que os blocos fornecem flexibilidade que não está disponível nos formatos de documentos tradicionais. Por exemplo, como o conteúdo de uma página não é armazenado diretamente dentro de um bloco de páginas, o mesmo bloco de conteúdo pode ser incluído em diversas páginas ou diversas vezes na mesma página.
+
+O Notion aproveita um banco de dados PostgreSQL hospedado no serviço de nuvem Amazon RDS for PostgreSQL para armazenar seus blocos. No início, o Notion usava um servidor de banco de dados para lidar com todas as solicitações. À medida que o número de usuários aumentava, a equipe da Notion aplicava escalonamento vertical, aumentando a capacidade do servidor virtual para acompanhar o aumento da carga. Eventualmente, mesmo a maior instância de banco de dados disponível da Amazon não foi capaz de lidar com a carga cada vez maior e a equipe da Notion teve que dividir o único servidor de banco de dados em um cluster de servidores. Em julho de 2023, o cluster de banco de dados consistia em 96 servidores de banco de dados. Cada servidor de banco de dados possui 1 banco de dados que é particionado logicamente em 5 fragmentos, com cada fragmento representado como um esquema PostgreSQL.
+
+Os dados são particionados em fragmentos lógicos usando o ID do espaço de trabalho como chave de partição. Isso garante que todos os blocos pertencentes a um espaço de trabalho sejam armazenados no mesmo banco de dados. Esta abordagem permite a utilização de transações e garante consistência no armazenamento e atualização de blocos.
+
+Os client-sides fazem interface com o banco de dados do Notion por meio de um servidor API dedicado, operando em um cluster de servidores web Node.js. A conexão com o banco de dados é gerenciada através do pool de conexões PgBouncer, melhorando o desempenho e a escalabilidade.
 
 ### Tech stack
 
@@ -105,6 +112,9 @@ Breaking down Notion Tech Stack.  Disponível em [https://slashdev.io/-breaking-
 
 **Jake Teton-Landis**.
 The data model behind Notion's flexibility. Disponível em [https://www.notion.so/blog/data-model-behind-notion].
+
+**Relbis Labs**
+Examining Notion's Backend Architecture. Disponível em [https://labs.relbis.com/blog/2024-04-18_notion_backend].
 
 
 
