@@ -37,7 +37,10 @@ Além disso, um aspecto importante da arquitetura do Notion é a sua API, que pe
 Em termos de tecnologias utilizadas, o Notion é construído principalmente utilizando várias bibliotecas e frameworks JavaScript, incluindo React e Redux.
 
 ### Histórico do sistema
-...
+
+Inicialmente concebida como um construtor de páginas web, a primeira versão enfrentou dificuldades devido a uma tech-stack instavél e uma abordagem que não correspondia às necessidades dos usuários. Em 2016, Notion foi relançada com a versão 2.0, que introduziu funcionalidades de banco de dados e um foco em fornecer templates simples para facilitar o trabalho dos usuários, o que marcou um ponto de virada para a empresa. Durante esse período, a equipe se mudou para Kyoto para se concentrar no desenvolvimento do produto, ajudando a expandir a equipe de oito para quinhentas pessoas em quatro anos.
+
+A popularidade de Notion cresceu significativamente com a pandemia de 2020, que impulsionou a necessidade de ferramentas de colaboração remota, ajudando a quintuplicar sua base de usuários. Com mais de 30 milhões de usuários em 2023, Notion atraiu uma variedade de empresas e indivíduos criativos, sendo valorizada em mais de $20 bilhões. A capacidade de personalização e a interface intuitiva contribuíram para seu sucesso, além do movimento no-code que facilitou o uso por pessoas sem conhecimento de programação.
 
 ### Decisões de projeto
 ...
