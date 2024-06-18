@@ -46,9 +46,7 @@ Em termos de tecnologias utilizadas, o Notion é construído principalmente util
 
 ![Tecnologias utilizadas](img/techstack.png)
 
-# Tech Stack Overview
-
-## Linguagens e Frameworks 
+### Linguagens e Frameworks 
 
 - **Node.js**: Ambiente de execução JavaScript server-side.
 - **Next.js**: Framework React para desenvolvimento web.
@@ -60,26 +58,26 @@ Em termos de tecnologias utilizadas, o Notion é construído principalmente util
 - **Swift**: Linguagem de programação desenvolvida pela Apple para desenvolvimento de aplicativos iOS.
 - **TypeScript**: Superconjunto de JavaScript que adiciona tipagem estática ao código.
 
-## Development
+### Development
 
 - **Babel**: Transpilador JavaScript que permite usar a próxima geração de JavaScript, hoje.
 - **Webpack**: Empacotador de módulos JavaScript.
 - **AWS Elastic Load Balancing**: Serviço que distribui automaticamente o tráfego de aplicativos por várias instâncias.
 - **Docker**: Plataforma para desenvolver, enviar e executar aplicativos em contêineres.
 
-## Libraries
+### Libraries
 
 - **React**: Biblioteca JavaScript para construção de interfaces de usuário.
 - **jQuery**: Biblioteca JavaScript que simplifica manipulação de HTML, eventos e animações.
 - **Moment.js**: Biblioteca JavaScript para manipulação e formatação de datas.
 - **Lodash**: Biblioteca JavaScript que fornece utilitários para tarefas de programação comuns.
 
-## Hosting
+### Hosting
 
 - **Amazon EC2**: Serviço da AWS que fornece capacidade de computação escalável na nuvem.
 - **Amazon Web Services (AWS)**: Plataforma de serviços de computação em nuvem da Amazon.
 
-## Data Stores
+### Data Stores
 
 - **Apache Spark**: Motor de processamento de dados para análise em tempo real.
 - **Apache Flink**: Plataforma de processamento de fluxo de dados.
